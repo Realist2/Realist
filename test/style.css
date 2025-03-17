@@ -1,0 +1,38 @@
+body{
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+h1{
+    color: darkblue;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+@keyframes moveText{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(100px);}
+    100%{transform: translateX(0);}
+}
+@keyframes fadeAndSpin{
+    0%{opacity: 0; transform: rotate(0deg) scale(0.5);}
+    50%{opacity: 1; transform: rotate(180deg) scale(1.2);}
+    100%{opacity: 1; transform: rotate(360deg) scale(1);}
+}
+@keyframes backgroundAnimation{
+    0%{background-color: red;}
+    25%{background-color: blue;}
+    50%{background-color: green;}
+    75%{background-color: orange;}
+    100%{background-color: purple;}
+}
+.animated{
+    transition: all 0.5s ease-in-out;
+    animation: moveText 1s ease-in-out infinite alternate, fadeAndSpin 1s ease-in-out;
+}
+.animated-bg{
+    animation: backgroundAnimation 5s infinite alternate;
+}

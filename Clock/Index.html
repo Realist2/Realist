@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+    *{
+      background-color: blue;
+    }
+      #clock {
+        font-size: 2m;
+        font-family: Sans-Serif;
+        text-align: center;
+        padding: 20px;
+        background-color: red;
+        color: white;
+        border-radius: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DIGITAL CLOCK</h1>
+    <div id="clock"></div>
+
+    <script>
+      function updateClock() {
+        const clock = document.getElementById("clock");
+        const date = new Date();
+        clock.innerText = date.toLocaleTimeString();
+      }
+
+      updateClock();
+      setInterval(updateClock, 1000); // Update every 1000 milliseconds (1 second)
+    </script>
+  </body>
+</html>

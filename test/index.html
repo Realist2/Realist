@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello, World</h1>
+    <p id="myParagraph">Click me to change text!</p>
+    <button onclick="changeText()">Click me</button>
+    <button onclick="changeColor()">Change color</button>
+    <button onclick="changeRandomColor()">Random color</button>
+    <button onclick="changeBackground()">Background color</button>
+    <button onclick="changeRandomStyles()">Random Style</button>
+    <button onclick="changeRandomStyleWithAnimation()">Random Style + Animation</button>
+    <button onclick="changeRandomStylesWithEffect()">Random effect</button>
+    <button onclick="startEffects()">Random effect + Sound</button>
+    <script>
+        function changeText() {
+    document.getElementById("myParagraph").innerHTML = "You clicked the button!";
+}
+        function changeColor() {
+    document.getElementById("myParagraph").style.color = "red";
+}
+    function changeRandomColor() {
+        let colors = ["red","blue","green","purple","orange","pink"];
+        let randomColor = colors[Math.floor(Math.random()*colors.length)];
+        document.getElementById("myParagraph").style.color = randomColor;
+}
+    function changeBackground() {
+        let colors = ["red","blue","green","purple","orange","pink","yellow"];
+        let randomTextColor = colors[Math.floor(Math.random()*colors.length)];
+        let randomByColor = colors[Math.floor(Math.random()*colors.length)]
+        document.getElementById("myParagraph").style.color = randomTextColor;
+        document.body.style.backgroundColor = randomByColor;
+}
+    function changeRandomStyles() {
+        let colors = ["red","blue","green","purple","orange","pink","yellow"];
+        let fonts = ["Arial","Verdana","Georgia","Courier new","Times new Roman"];
+        let sizes = ["16px","20px","24px","28px","32px"];
+        let randomTextColor = colors[Math.floor(Math.random()*colors.length)];
+        let randomByColor = colors[Math.floor(Math.random()*colors.length)];
+        let randomFont = fonts[Math.floor(Math.random()*fonts.length)];
+        let randomSize = sizes[Math.floor(Math.random()*sizes.length)];
+        let paragraph = document.getElementById("myParagraph");
+        paragraph.style.color = randomTextColor;
+        document.body.style.backgroundColor = randomByColor;
+        paragraph.style.fontFamily = randomFont;
+        paragraph.style.fontSize = randomSize;
+}
+    function changeRandomStyleWithAnimation() {
+        let colors = ["red","blue","green","purple","orange","pink","yellow"];
+        let fonts = ["Arial","Verdana","Georgia","Courier new","Times new Roman"];
+        let sizes = ["16px","20px","24px","28px","32px"];
+        let randomTextColor = colors[Math.floor(Math.random()*colors.length)];
+        let randomByColor = colors[Math.floor(Math.random()*colors.length)];
+        let randomFont = fonts[Math.floor(Math.random()*fonts.length)];
+        let randomSize = sizes[Math.floor(Math.random()*sizes.length)];
+        let paragraph = document.getElementById("myParagraph");
+        paragraph.style.color = randomTextColor;
+        document.body.style.backgroundColor = randomByColor;
+        paragraph.style.fontFamily = randomFont;
+        paragraph.style.fontSize = randomSize;
+        paragraph.classList.add("animated");
+        setTimeout (()=>{
+            paragraph.classList.remove("animated");
+        }, 1000);
+}
+    function changeRandomStylesWithEffect() {
+        let colors = ["red","blue","green","purple","orange","pink","yellow"];
+        let fonts = ["Arial","Verdana","Georgia","Courier new","Times new Roman"];
+        let sizes = ["16px","20px","24px","28px","32px"];
+        let randomTextColor = colors[Math.floor(Math.random()*colors.length)];
+        let randomByColor = colors[Math.floor(Math.random()*colors.length)];
+        let randomFont = fonts[Math.floor(Math.random()*fonts.length)];
+        let randomSize = sizes[Math.floor(Math.random()*sizes.length)];
+        let paragraph = document.getElementById("myParagraph");
+        paragraph.style.color = randomTextColor;
+        document.body.style.backgroundColor = randomByColor;
+        paragraph.style.fontFamily = randomFont;
+        paragraph.style.fontSize = randomSize;
+        paragraph.classList.add("animated");
+        setTimeout (()=>{
+            paragraph.classList.remove("animated");
+        }, 1000);
+}
+    function changeRandomStylesWithEffect() {
+        let colors = ["red","blue","green","purple","orange","pink","yellow"];
+        let fonts = ["Arial","Verdana","Georgia","Courier new","Times new Roman"];
+        let sizes = ["16px","20px","24px","28px","32px"];
+        let randomTextColor = colors[Math.floor(Math.random()*colors.length)];
+        let randomByColor = colors[Math.floor(Math.random()*colors.length)];
+        let randomFont = fonts[Math.floor(Math.random()*fonts.length)];
+        let randomSize = sizes[Math.floor(Math.random()*sizes.length)];
+        let paragraph = document.getElementById("myParagraph");
+        paragraph.style.color = randomTextColor;
+        document.body.style.backgroundColor = randomByColor;
+        paragraph.style.fontFamily = randomFont;
+        paragraph.style.fontSize = randomSize;
+        paragraph.classList.add("animated");
+        setTimeout (()=>{
+            paragraph.classList.remove("animated");
+        }, 1000);
+        let sound = new Audio("click.m4a");
+        sound.play();
+}
+    function startEffects(){
+        changeRandomStylesWithEffect();
+        document.body.classList.add("animated-bg")
+    }
+    </script>
+</body>
+</html>

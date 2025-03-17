@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Realist Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #333;
+            text-align: center;
+            transition: background-color 0.5s ease;
+        }
+
+        h1, h2, h3 {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        h1 {
+            background-color: #ff6347;
+            animation: bounce 2s infinite;
+        }
+
+        h2 {
+            background-color: #4682b4;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        h3 {
+            background-color: #3cb371;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #ff6347;
+            transform: scale(1.1);
+        }
+
+        .links-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .project-links, .access-files {
+            margin-top: 20px;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+            width: 80%;
+            margin-top: 30px;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Realist Website</h1>
+    <h2>Message from Realist</h2>
+    <hr>
+    <p>Hello Developer! I am Realist. And if you read this I am not alone in the World of ones and zeros. Me, you, and others like us are the future of this technical world! Let's build a better world!</p>
+    <hr/>
+
+    <div class="links-container">
+        <div class="external-links">
+            <h3>Other Sites</h3>
+            <a href="https://chrioseedoflifechurch.org/sermons/the-light-of-life/">CHRIO SITE</a>
+            <a href="https://naijasermons.com.ng/download-mp3-ichabod-obtaining-grace-to-last-by-apostle-joshua-selman-november-19-2023/">Naija Sermons</a>
+            <a href="https://firars.futa.edu.ng/app/student/ugfresherclearance">FUTA Portal</a>
+            <a href="https://vimcolorschemes.com/craftzdog/solarized-osaka.nvim">Vim Themes</a>
+            <a href="https://docs.emmet.io/cheat-sheet/">HTML Shortcuts</a>
+            <a href="https://github.com/Kendric5667/Realist.github.io/edit/main/README.md">GitHub Page</a>
+            <a href="https://realist.w3spaces.com/">My Site</a>
+        </div>
+
+        <div class="project-links">
+            <h3>HTML, CSS Projects</h3>
+            <a href="Clock/Index.html">Clock</a>
+            <a href="Calculator/Index.html">Calculator</a>
+            <a href="Flower/Index.html">Age Test</a>
+            <a href="My website/Index.html">My Website</a>
+            <a href="Facebook/Index.html">Facebook</a>
+            <a href="New Facebook/Index.html">New Facebook</a>
+            <a href="Login-page/Index.html">Login Page</a>
+            <a href="canvas/index.html">Canvas</a>
+            <a href="File paths/index.html">File Path</a>
+            <a href="Formatting/index.html">Formatting</a>
+            <a href="HTML list/index.html">HTML List</a>
+            <a href="Iframes/index.html">Iframe</a>
+            <a href="Input attributes/index.html">Input Attributes</a>
+            <a href="Layout/index.html">Layout</a>
+            <a href="Semanties/index.html">Semantics</a>
+            <a href="Stopwatch/index.html">Stopwatch</a>
+            <a href="Table/index.html">Table</a>
+        </div>
+
+        <div class="access-files">
+            <h3>Access My File on LAN</h3>
+            <a href="File/Apk">APK</a>
+            <a href="Files/Music">Music</a>
+            <a href="Files/Image">Images</a>
+            <a href="Files/Document">Documents</a>
+            <a href="lordicon">LordIcon</a>
+        </div>
+    </div>
+
+</body>
+</html>
