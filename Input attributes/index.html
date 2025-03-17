@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <form action="update_profile.php" method="post">
+        <label for="Username">Username</label>
+        <input type="text" id="Username" name="Username" required placeholder="Enter your username">
+        <br><br>
+
+        <label for="Email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        <br><br>
+
+        <label for="birthdate">Date of Birth</label>
+        <input type="date" id="birthdate" name="birthdate" required max="2005-12-31">
+        <br><br>
+
+        <label for="Bio">Bio :</label>
+        <textarea name="Bio" id="Bio" cols="30" rows="10" maxlength="250" placeholder="about yourself"></textarea>
+        <br><br>
+
+        <button type="submit">Update Profile</button>
+
+        <h1>contact us</h1>
+        <form action="sumit.php" method="post" target="_blank" enctype="multipart/form-data" novalidate>
+            <label for="name">name</label>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+
+        <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+
+        <label for="message">message</label>
+            <textarea name="message" id="message"  rows="4" required></textarea>
+            <br><br>
+        <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx">
+            <br><br>
+            <button type="submit">submit</button>
+        </form>
+    </form>
+</body>
+</html>
